@@ -45,14 +45,14 @@ class DependencyInjector
 
             if (!$reflector->isInstantiable()) {
                 // Class is not instantiable
-                throw new ClassNotInstantiableException(sprintf('%sis not instantiable.', $class));
+                throw new ClassNotInstantiableException(sprintf('%s is not instantiable.', $class));
             }
 
             // Build an instance with the given reflector
             // Injects objects of the desired instance for class constructor arguments and return the instantiated class
             return $this->getClass($class, $this->injectConstructorArgs($reflector, $class, $create), $create);
         } catch (\Exception $e) {
-            $this->errorHandler->handle($e);
+            $this->errorHandler->exit($e);
             exit;
         }
     }
