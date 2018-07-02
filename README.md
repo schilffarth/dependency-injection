@@ -6,11 +6,7 @@ Initial Setup: See sections _Requirements_ and _Setup_
 
 The DI-Component provides ease in using singletons for your PHP application
 
-Example usage:
-
-```
-todo Add example usage to README.md
-```
+[Example usage](https://github.com/schilffarth/command-line-interface/blob/master/README.md)
 
 ### Releases
 
@@ -30,9 +26,7 @@ First release
 
 ### Setup
 
-- The package can be installed using composer, run `composer require schilffarth/dependency-injection`
-
-- Or add the requirement manually to your project's composer.json and run `composer update`
+- Add the requirement to your project's composer.json and run `composer update`
 
 ```
 "require": {
